@@ -1,0 +1,12 @@
+version: "2"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: config/Dockerfile.app
+    volumes:
+      - .:/zaw-emoji
+      - bundle-data:/usr/local/bundle/
+volumes:
+  bundle-data:
+    driver: local
