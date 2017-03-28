@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: config/Dockerfile.app
+    command: "bash -c 'bundle && bundle exec ruby generate.rb > sources/zaw-src-emoji.zsh'"
     volumes:
       - .:/zaw-emoji
       - bundle-data:/usr/local/bundle/
