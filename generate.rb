@@ -46,7 +46,7 @@ function zaw-src-emoji() {
 }
 
 function zaw-callback-append-symbol-to-buffer(){
-  LBUFFER="${BUFFER}:${1#*  }:"
+  LBUFFER="${LBUFFER}:${1#*  }:"
 }
 
 zaw-register-src -n emoji zaw-src-emoji
